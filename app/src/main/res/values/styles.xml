@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- <item name="android:actionBarStyle">@style/BarTheme</item>-->
+        <item name="android:textColor">@color/grayDark</item> <!-- color of text inside activity -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/grayDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>           <!-- text color inside of actionBar-->
+        <!--<item name="toolbarStyle">@style/Widget.Toolbar</item>-->
+    </style>
+
+    <!--<style name="Widget.Toolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:background">@android:color/holo_green_light</item>
+    </style>-->
+
+    <style name="MainTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MainTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="MainTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MainTheme.RadioGroup" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

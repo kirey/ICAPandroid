@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "775787691510",
+    "firebase_url": "https://icap-ccf2d.firebaseio.com",
+    "project_id": "icap-ccf2d",
+    "storage_bucket": "icap-ccf2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775787691510:android:9ba8333dfa351220",
+        "android_client_info": {
+          "package_name": "kirey.com.icap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775787691510-gabn46qnr2o01ij7hth9vd2gflihp4r3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kirey.com.icap",
+            "certificate_hash": "75b9cd22b0ff65c354fec3418dfa28218e3d4f54"
+          }
+        },
+        {
+          "client_id": "775787691510-qrn73upklmt7j0tmp05lli713b5anj1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj6763DBiQ4VrcNEIt1sig7PCiy5OTiuA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775787691510-qrn73upklmt7j0tmp05lli713b5anj1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

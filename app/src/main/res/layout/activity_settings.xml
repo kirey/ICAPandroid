@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/actionBarPaddingLeft"
+    android:paddingTop="@dimen/actionBarPaddingLeft"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/choose_alert"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupAlertLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioYellowAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/grayDark"
+            android:text="@string/level_yellow" />
+
+        <RadioButton
+            android:id="@+id/radioOrangeAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grayDark"
+            android:text="@string/level_orange" />
+
+        <RadioButton
+            android:id="@+id/radioRedAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grayDark"
+            android:text="@string/level_red" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingTop="5dp"
+        android:text="@string/messages_storage_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <NumberPicker
+            android:id="@+id/numberPicker"
+
+
+            android:descendantFocusability="blocksDescendants"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/setSizeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Set size"
+            />
+
+    </LinearLayout>
+</LinearLayout>
