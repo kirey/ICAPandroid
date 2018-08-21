@@ -20,7 +20,6 @@ public class WelcomeActivity extends Activity {
     // Splash screen timer
     private static int WELCOME_TIME_OUT = 4000;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
@@ -29,40 +28,21 @@ public class WelcomeActivity extends Activity {
 
         final String userToken = ((ICAPApp)this.getApplicationContext()).getUserToken();
 
-        //handle notification message if any and set as read
-        /*if (getIntent().getExtras() != null) {
-            String data = (String) getIntent().getExtras().get("messageText");
-            String messageId = (String) getIntent().getExtras().get("google.message_id");
-            if(messageId != null)
-                new MessageMarkAsReadTask(this).execute(messageId, userToken);
-
-        }*/
-
-        //if userToken not exists hold welcome screen for a while
-        //and then redirect it to login screen
-        if(userToken == null)
-            displayWelcomeScreen();
-        else
-           //check if token is valid
-        //TODO check internet connection
-         //   new GetUserDetailsTask(this).execute(userToken);
-        {
-            Intent i = new Intent(WelcomeActivity.this, MainActivity.class);
-            startActivity(i);
-            finish();
-        }
-    }
-
-    public void displayWelcomeScreen(){
         new Handler().postDelayed(new Runnable() {
 
             @Override
             public void run() {
                 // This method will be executed once the timer is over
-                // Start your login main activity
-                Intent i = new Intent(WelcomeActivity.this, LoginActivity.class);
-                startActivity(i);
-                finish();
+                if(userToken != null){
+                    Intent i = new Intent(WelcomeActivity.this, MainActivity.class);
+                    startActivity(i);
+                    finish();
+                }else {
+                    // Start your login main activity
+                    Intent i = new Intent(WelcomeActivity.this, LoginActivity.class);
+                    startActivity(i);
+                    finish();
+                }
             }
         }, WELCOME_TIME_OUT);
     }
